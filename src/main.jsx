@@ -1,7 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {createRoot} from 'react-dom/client';
 import {ArrowLeft, ArrowRight, Camera, Check, CircleDollarSign, Coins, Gem, Globe2, Luggage, Plane, RotateCcw, Sparkles, Star, Sun, Umbrella} from 'lucide-react';
+import {inject} from '@vercel/analytics';
 import './styles.css';
+
+inject();
 
 const cards=[
  {id:'estate',eyebrow:"VIVA L’ESTATE",title:'Summer Bonus',sub:'Premio massimo €500.000',price:'€5',tone:'orange',Icon:Sun},
